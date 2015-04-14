@@ -1,0 +1,10 @@
+title: ghaiklor
+email: ghaiklor@gmail.com
+description: JavaScript/NodeJS developer
+baseurl: ""
+url: "http://ghaiklor.com"
+twitter_username: ghaiklor
+github_username:  ghaiklor
+
+# Build settings
+markdown: kramdown
