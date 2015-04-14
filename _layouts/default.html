@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset='UTF-8'>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name='keywords' content='ghaiklor, Eugene, Obrezkov, Eugene Obrezkov, JavaScript, NodeJS'>
+  <meta name="description"
+        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name='copyright' content='ghaiklor'>
+  <meta name='language' content='english'>
+  <meta name='author' content='Eugene Obrezkov, ghaiklor@gmail.com'>
+  <meta name='reply-to' content='ghaiklor@gmail.com'>
+  <meta name='url' content='http://ghaiklor.com'>
+  <meta name='identifier-URL' content='http://ghaiklor.com'>
+  <meta name='coverage' content='Worldwide'>
+  <meta name='distribution' content='Global'>
+  <meta name='rating' content='General'>
+  <meta name='target' content='all'>
+  <meta name='HandheldFriendly' content='True'>
+  <meta name='MobileOptimized' content='320'>
+  <meta name='medium' content='blog'>
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin' rel='stylesheet' type='text/css'>
+  <link rel='alternate' type='application/rss+xml' title='RSS' href='http://ghaiklor.com/feed.xml'>
+  <link rel='shortcut icon' type='image/ico' href='/favicon.ico'>
+  <link rel='me' type='text/html' href='https://plus.google.com/+EugeneObrezkov/posts'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin' rel='stylesheet'
+        type='text/css'>
   <link rel="stylesheet" href="/assets/css/normalize.css">
   <link rel="stylesheet" href="/assets/css/foundation.min.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
