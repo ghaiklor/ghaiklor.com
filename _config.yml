@@ -1,11 +1,6 @@
 # Base configuration
-title: ghaiklor
-email: ghaiklor@gmail.com
-description: JavaScript/NodeJS developer. Loves functional programming. Believe, that JavaScript is conquering world.
-baseurl: ""
-url: "http://ghaiklor.com"
-twitter_username: ghaiklor
-github_username:  ghaiklor
+title: Eugene Obrezkov aka ghaiklor
+description: JavaScript/NodeJS developer. Loves functional programming. Believes, that JavaScript is conquering world.
 
 # Where things are
 source:      .
