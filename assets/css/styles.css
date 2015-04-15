@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
 }
 
 /* HELPERS */
-.valign-middle.row, .valign-middle > .columns {
+.valign-middle.row {
   display: table;
   width: inherit;
   height: 100%;
