@@ -36,11 +36,10 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   border-radius: 50%;
-  max-width: 150px;
-  max-height: 150px;
-  width: auto;
-  height: auto;
+  width: 150px;
+  height: 150px;
   border: 2px solid white;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -51,13 +50,13 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
 }
 
 .landing-page .my-name {
-  display: block;
   font-size: 5vh;
   line-height: 10vh;
 }
 
 .landing-page .my-nickname {
-  display: block;
+  font-size: 2vh;
+  line-height: 4vh;
   color: rgba(255, 255, 255, 0.6);
 }
 
