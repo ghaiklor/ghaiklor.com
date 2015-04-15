@@ -6,7 +6,7 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 h1, h2, h3, h4, h5, h6, a, p, span, img {
