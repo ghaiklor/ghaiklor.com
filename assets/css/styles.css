@@ -66,8 +66,9 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
 }
 
 .landing-page .contacts-group .contacts-item {
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 3vh;
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
   border: 0;
   background-color: transparent;
   color: white;
