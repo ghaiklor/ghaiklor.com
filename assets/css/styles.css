@@ -1,3 +1,4 @@
+/* RESET */
 html, body {
   background: url("/assets/images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -8,26 +9,61 @@ html, body {
   overflow-y: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, a, p {
+h1, h2, h3, h4, h5, h6, a, p, span, img {
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
 }
 
-.vertical-align-middle.row, .vertical-align-middle .columns {
+/* HELPERS */
+.valign-middle.row, .valign-middle .columns {
   display: table;
   width: inherit;
   height: 100%;
 }
 
-.vertical-align-middle .item {
+.valign-middle .valign-item {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
 
-.my-photo {
+/* LANDING PAGE */
+.landing-page .my-photo {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
   border-radius: 50%;
-  width: 126px;
-  height: 126px;
+  width: 125px;
+  height: 125px;
   border: 2px solid white;
+}
+
+.landing-page .my-photo:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.landing-page .my-name {
+  font-size: 2vw;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.landing-page .my-description {
+  font-size: 1.5vw;
+}
+
+.landing-page .contacts-group .contacts-item {
+  margin-left: 0.5rem;
+  border: 0;
+  background-color: transparent;
+  color: white;
+}
+
+.landing-page .contacts-group .contacts-item:hover {
+  background-color: white;
+  color: black;
 }
