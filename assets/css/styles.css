@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
 }
 
 /* HELPERS */
-.valign-middle.row, .valign-middle .columns {
+.valign-middle.row, .valign-middle > .columns {
   display: table;
   width: inherit;
   height: 100%;
@@ -36,8 +36,8 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   border-radius: 50%;
-  width: 125px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
   border: 2px solid white;
 }
 
