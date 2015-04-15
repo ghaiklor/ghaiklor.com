@@ -36,23 +36,34 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
   border: 2px solid white;
+  margin-bottom: 1rem;
 }
 
 .landing-page .my-photo:hover {
-  -webkit-filter: grayscale(0.5);
-  filter: grayscale(0.5);
+  -webkit-filter: grayscale(0.3);
+  filter: grayscale(0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 .landing-page .my-name {
+  display: block;
   font-size: 5vh;
-  margin-top: 1.25rem;
+  line-height: 10vh;
+}
+
+.landing-page .my-nickname {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .landing-page .my-description {
   font-size: 3vh;
+  line-height: 6vh;
 }
 
 .landing-page .contacts-group .contacts-item {
