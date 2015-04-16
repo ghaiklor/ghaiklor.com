@@ -125,3 +125,30 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
   font-size: 2vh;
   color: rgba(0, 0, 0, 0.7);
 }
+
+/* POST PAGE */
+.post-page {
+  min-height: 100%;
+  background-color: whitesmoke;
+}
+
+.post-page .post-title > a {
+  font-size: 6vh;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.post-page .post-title > a:hover {
+  color: #B9301C;
+}
+
+.post-page .post-content * {
+  font-size: 3vh;
+  color: black;
+}
+
+.post-page span.post-date {
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.7);
+}
