@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Introduction"
+title: Introduction
 date: April 15th, 2015
-keywords: "introduction, bio, blog, ghaiklor, Eugene Obrezkov"
+keywords: introduction, bio, blog, ghaiklor, Eugene Obrezkov
 ---
 
 So... Why I created this blog?
