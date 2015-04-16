@@ -17,18 +17,20 @@ layout: default
     <hr/>
     {% endfor %}
 
-    {{ paginator.page }} of {{ paginator.total_pages }}
+    <div class="pagination-centered">
+      <ul class="pagination">
+        {% if paginator.previous_page %}
+        <li class="arrow">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
+        </li>
+        {% endif %}
 
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer Posts</a>
-      {% endif %}
-
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo; Older Posts</a>
-      {% endif %}
+        {% if paginator.next_page %}
+        <li class="arrow">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
+        </li>
+        {% endif %}
+      </ul>
     </div>
-    {% endif %}
   </div>
 </div>
