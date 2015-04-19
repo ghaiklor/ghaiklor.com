@@ -9,8 +9,8 @@ layout: null
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url }}{{ site.baseurl }}</id>
   <author>
-    <name>{{ site.author.name }}</name>
-    <email>{{ site.author.email }}</email>
+    <name>Eugene Obrezkov</name>
+    <email>ghaiklor@gmail.com</email>
   </author>
 
   {% for post in site.posts %}
