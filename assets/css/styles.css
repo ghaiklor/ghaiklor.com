@@ -51,8 +51,8 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
 }
 
 .landing-page .my-name {
-  font-size: 5vh;
-  line-height: 10vh;
+  font-size: 4vh;
+  line-height: 8vh;
 }
 
 .landing-page .my-nickname {
@@ -62,15 +62,15 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
 }
 
 .landing-page .my-description {
-  font-size: 3vh;
-  line-height: 6vh;
+  font-size: 2.5vh;
+  line-height: 5vh;
 }
 
 .landing-page .contacts-group .contacts-item {
-  padding: 0.7rem;
+  padding: 1rem;
   font-size: 3vh;
   margin-left: 1rem;
-  border: 0;
+  border: 1px solid white!important;
   background-color: transparent;
   color: white;
 }
