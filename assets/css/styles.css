@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
 .landing-page .my-nickname {
   font-size: 2vh;
   line-height: 4vh;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .landing-page .my-description {
@@ -66,8 +66,12 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
   line-height: 5vh;
 }
 
+.landing-page .contacts-group {
+  margin-top: 2rem;
+}
+
 .landing-page .contacts-group .contacts-item {
-  padding: 1rem;
+  padding: 0.6rem;
   font-size: 3vh;
   margin-left: 1rem;
   border: 1px solid white!important;
