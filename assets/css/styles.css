@@ -66,36 +66,16 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
   line-height: 6vh;
 }
 
-.landing-page .contacts-group li.vertical-divider {
-  font-size: 3vh;
-  color: white;
-  list-style-type: none;
-  display: inline;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.landing-page .contacts-group li.vertical-divider:before {
-  color: rgba(255, 255, 255, 0.5);
-  content: "|";
-}
-
 .landing-page .contacts-group .contacts-item {
-  font-family: 'Raleway', sans-serif;
+  padding: 0.7rem;
   font-size: 3vh;
   margin-left: 1rem;
   border: 0;
   background-color: transparent;
   color: white;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
 }
 
 .landing-page .contacts-group .contacts-item:hover {
   background-color: white;
   color: black;
-}
-
-.landing-page .contacts-group .contacts-item.icon {
-  padding: 0.7rem;
 }
