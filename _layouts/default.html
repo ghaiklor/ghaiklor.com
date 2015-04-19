@@ -1,57 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset='UTF-8'>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-language" content="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name='keywords'
-        content='{% if page.keywords %}{{ page.keywords }}{% else %}ghaiklor, Eugene, Obrezkov, Eugene Obrezkov, JavaScript, NodeJS{% endif %}'>
-  <meta name="description"
-        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name='copyright' content='ghaiklor'>
-  <meta name='language' content='English'>
-  <meta name='author' content='Eugene Obrezkov, ghaiklor@gmail.com'>
-  <meta name='reply-to' content='ghaiklor@gmail.com'>
-  <meta name='coverage' content='Worldwide'>
-  <meta name='distribution' content='Global'>
-  <meta name='rating' content='General'>
-  <meta name='target' content='all'>
-  <meta name='HandheldFriendly' content='True'>
-  <meta name='MobileOptimized' content='320'>
-  <meta name='medium' content='blog'>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@ghaiklor">
-  <meta name="twitter:creator" content="@ghaiklor">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  <meta name="twitter:description"
-        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:type" content="website">
-  <meta property="og:description"
-        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="article:author" content="{{ site.url }}">
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-  <link rel='alternate' type='application/rss+xml' title='ghaiklor' href='/feed.xml'>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel='me' type='text/html' href='https://plus.google.com/+EugeneObrezkov/posts'>
-
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin' rel='stylesheet'
-        type='text/css'>
-  <link rel="stylesheet" href="/assets/css/normalize.css">
-  <link rel="stylesheet" href="/assets/css/foundation.min.css">
-  <link rel="stylesheet" href="/assets/css/fontello.css"/>
-  <link rel="stylesheet" href="/assets/css/syntax.css"/>
-  <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
+{% include head.html %}
 <body>
 {{ content }}
 </body>
