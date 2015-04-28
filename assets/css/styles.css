@@ -20,16 +20,9 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
   color: white;
 }
 
-hr.width-30 {
-  width: 30%;
-}
-
-hr.width-50 {
-  width: 50%;
-}
-
-hr.width-100 {
-  width: 100%;
+hr {
+  text-align: center;
+  margin: 1.25rem auto;
 }
 
 /* HELPERS */
@@ -100,7 +93,7 @@ hr.width-100 {
   line-height: 5vh;
 }
 
-.landing-page .links-group .links-item, .landing-page .contacts-group .contacts-item {
+.landing-page .links-group .links-item {
   font-family: 'Raleway', sans-serif;
   padding: 0.3em;
   font-size: 2.5vh;
@@ -110,6 +103,6 @@ hr.width-100 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.landing-page .links-group .links-item:hover, .landing-page .contacts-group .contacts-item:hover {
+.landing-page .links-group .links-item:hover {
   color: rgba(255, 255, 255, 1);
 }
