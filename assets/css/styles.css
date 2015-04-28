@@ -88,25 +88,23 @@ h1, h2, h3, h4, h5, h6, a, p, span, img {
   line-height: 5vh;
 }
 
-.landing-page .contacts-group {
+.landing-page .links-group {
   margin-top: 2rem;
 }
 
-.landing-page .contacts-group .contacts-item {
+.landing-page .links-group .links-item {
+  font-family: 'Raleway', sans-serif;
+}
+
+.landing-page .links-group .links-item, .landing-page .contacts-group .contacts-item {
   padding: 0.5em;
   font-size: 3vh;
   margin-left: 1rem;
   border: 0;
   background-color: transparent;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.landing-page .contacts-group .contacts-item.text {
-  font-family: 'Raleway', sans-serif;
-  padding: 0.5em 1em 0.5em 1em;
-}
-
-.landing-page .contacts-group .contacts-item:hover {
-  background-color: white;
-  color: black;
+.landing-page .links-group .links-item:hover, .landing-page .contacts-group .contacts-item:hover {
+  color: rgba(255, 255, 255, 1);
 }
