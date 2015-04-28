@@ -95,12 +95,12 @@ hr {
 
 .landing-page .links-group .links-item {
   font-family: 'Raleway', sans-serif;
-  padding: 0.3em;
+  padding: 0.5em;
   font-size: 2.5vh;
-  margin-left: 1rem;
+  margin-left: 1em;
   border: 0;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .landing-page .links-group .links-item:hover {
