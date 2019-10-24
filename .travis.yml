@@ -1,11 +1,8 @@
 language: ruby
 rvm:
-- 2.1
-script: gem install jekyll html-proofer && jekyll build && htmlproofer ./_site
+- 2.2
 
-branches:
-  only:
-  - gh-pages
+script: gem install jekyll html-proofer && jekyll build && htmlproofer ./_site
 
 env:
   global:
