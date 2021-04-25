@@ -1,5 +1,5 @@
 # ghaiklor.com
 
-[![Build Status](https://travis-ci.org/ghaiklor/ghaiklor.com.svg?branch=master)](https://travis-ci.org/ghaiklor/ghaiklor.com)
+[![Build Status](https://travis-ci.com/ghaiklor/ghaiklor.com.svg?branch=master)](https://travis-ci.com/ghaiklor/ghaiklor.com)
 
-My personal site build with Jekyll.
+My personal landing page built with Jekyll to reference my blog, CV, and whatever else I can come up with later on.

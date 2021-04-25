@@ -1,9 +1,5 @@
 language: ruby
-rvm:
-- 2.6
-
-script: gem install jekyll html-proofer && jekyll build && htmlproofer ./_site
-
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+rvm: 2.6
+cache: bundler
+before_install: gem install bundler
+script: make
