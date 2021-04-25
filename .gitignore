@@ -43,6 +43,7 @@ Temporary Items
 *.gem
 *.rbc
 /.config
+/Gemfile.lock
 /coverage/
 /InstalledFiles
 /pkg/
