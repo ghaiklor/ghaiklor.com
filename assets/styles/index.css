@@ -1,0 +1,171 @@
+ /*<uniquifier>: Use a unique and descriptive class name*/
+ /*<weight>: Use a value from 100 to 900*/
+
+
+
+p {
+    margin: 5px 0;
+}
+
+body {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 16px;
+    position: relative;
+    color: white;
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+ h2, h3 {
+     font-size: 31px;
+ }
+
+section {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 20px;
+}
+
+#hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 95vh;
+
+    min-height: 800px;
+}
+
+ #hero img {
+     width: 400px;
+ }
+
+#hero div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#about {
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 60px
+}
+#about:after {
+    position: absolute;
+    height: calc(100% - 160px);
+    content: '';
+    bottom: 45px;
+    left: 50%;
+    margin-left: -1px;
+    width: 1px;
+    background: white;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+#about > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    margin: 2px 0;
+    text-align: right;
+}
+
+#about > div:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+ .gallery img {
+     /*position: absolute;*/
+     width: 100%;
+ }
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#about > div :before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -11px;
+    width: 20px;
+    height: 20px;
+    background: lightslategray;
+    border-radius: 100%;
+    z-index: 2;
+
+}
+
+ button{
+     cursor: pointer;
+     display:inline-block;
+     padding:0.35em 1.2em;
+     border:0.1em solid #FFFFFF;
+     margin:0 0.3em 0.3em 0;
+     border-radius:0.12em;
+     box-sizing: border-box;
+     text-decoration:none;
+     font-weight:300;
+     color:#FFFFFF;
+     text-align:center;
+     transition: all 0.2s;
+ }
+ button:hover{
+     color:#000000;
+     background-color:#FFFFFF;
+ }
+ @media all and (max-width:30em){
+     button{
+         display:block;
+         margin:0.4em auto;
+     }
+ }
+
+ #bg {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     background: url("../images/bg.jpg") no-repeat center;
+     background-size: cover;
+ }
+
+ #testimonials {
+     flex-direction: column;
+     align-items: flex-start;
+ }
