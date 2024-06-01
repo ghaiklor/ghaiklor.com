@@ -58,11 +58,15 @@ section {
      width: 40%;
  }
 
- #hero img {
+ #hero #me {
      position: absolute;
-     width: 40vw;
+     width: 100%;
      z-index: 1;
-     right: 0;
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: 50%;
+     background-position: center right;
+     background-image: url("../../assets/images/new/me.png");
  }
 
 #hero .description {
