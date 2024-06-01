@@ -20,6 +20,7 @@ body {
     font-size: 16px;
     position: relative;
     color: white;
+    background-color: #0E0C15;
 }
 
 p {
@@ -53,32 +54,47 @@ section {
     position: relative;
 }
 
- #hero img {
-     width: 400px;
+ #hero p {
+     width: 40%;
  }
 
-#hero div {
+ #hero img {
+     position: absolute;
+     width: 40vw;
+     z-index: 1;
+     right: 0;
+ }
+
+#hero .description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    z-index: 2;
+    width: 100%;
 }
 
 #about {
     flex-direction: column;
     position: relative;
     align-items: center;
-    gap: 60px
+    gap: 60px;
+    max-width: 100%;
 }
-#about:after {
-    position: absolute;
-    height: calc(100% - 160px);
-    content: '';
-    bottom: 45px;
-    left: 50%;
-    margin-left: -1px;
-    width: 1px;
-    background: white;
+
+#about h2 {
+    margin-bottom: 0;
 }
+/*#about:after {*/
+/*    position: absolute;*/
+/*    height: calc(100% - 160px);*/
+/*    content: '';*/
+/*    bottom: 45px;*/
+/*    left: 50%;*/
+/*    margin-left: -1px;*/
+/*    width: 1px;*/
+/*    background: white;*/
+/*}*/
 
 h1, h2, h3 {
     margin-top: 0;
@@ -90,45 +106,74 @@ h1, h2, h3 {
     justify-content: space-between;
     gap: 40px;
     position: relative;
-    margin: 2px 0;
-    text-align: right;
-}
-
-#about > div:nth-child(even) {
-    flex-direction: row-reverse;
+    /*margin: 2px 0;*/
     text-align: left;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 2;
+    padding: 10vh 0;
+    box-sizing: border-box;
 }
 
-.gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
- .gallery img {
-     /*position: absolute;*/
-     width: 100%;
+ #about > div:last-of-type {
+     min-height: 50vh;
  }
+
+ #about .gallery {
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     bottom: 0;
+     left: 0;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: bottom;
+     z-index: 1;
+ }
+
+ #about #early .gallery {
+     background-image: url("../../assets/images/new/early.jpg");
+ }
+ #about #education .gallery {
+     background-image: url("../../assets/images/new/education.jpg");
+ }
+ #about #profession-growth .gallery {
+     background-image: url("../../assets/images/new/profession-growth.jpg");
+ }
+
+/*.gallery {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*}*/
+/* .gallery img {*/
+/*     !*position: absolute;*!*/
+/*     width: 100%;*/
+/* }*/
 .content {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-}
-
-#about > div :before {
-    content: '';
-    position: absolute;
-    top: 16px;
-    left: 50%;
-    margin-left: -11px;
-    width: 20px;
-    height: 20px;
-    background: lightslategray;
-    border-radius: 100%;
+    position: relative;
     z-index: 2;
-
+    max-width: 1120px;
+    margin: 0 auto;
 }
+
+/*#about > div :before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 16px;*/
+/*    left: 50%;*/
+/*    margin-left: -11px;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    background: lightslategray;*/
+/*    border-radius: 100%;*/
+/*    z-index: 2;*/
+
+/*}*/
 
  button{
      cursor: pointer;
@@ -171,28 +216,31 @@ h1, h2, h3 {
      align-items: flex-start;
  }
 
-#hero .mousey {
+.mousey {
      position: absolute;
-     bottom: 10px;
-     left: calc(50% - 8px);
+     bottom: 20px;
+     left: 50%;
+    margin-left: 0;
      box-sizing: content-box;
      width: 3px;
      height: 18px;
      padding: 10px 11px;
      border: 2px solid #000;
      border-radius: 25px;
-     opacity: .75
+     opacity: .75;
+    z-index: 3;
+    cursor: pointer;
  }
 
- #hero .mousey_white {
+ .mousey_white {
      border: 2px solid #fff
  }
 
- #hero .mousey_white .scroller {
+.mousey_white .scroller {
      background-color: #fff
  }
 
- #hero .scroller {
+ .scroller {
      width: 3px;
      height: 10px;
      background-color: #000;
